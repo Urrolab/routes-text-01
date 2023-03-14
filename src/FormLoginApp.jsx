@@ -14,9 +14,9 @@ const inlineStyles = {
 
 const FormLoginApp = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="routes-text-01/">
       <header>
-        <Link to='/' style={inlineStyles}>
+        <Link to='/routes-text-01' style={inlineStyles}>
           home
         </Link>
         <Link to='/notes' style={inlineStyles}>
@@ -29,10 +29,10 @@ const FormLoginApp = () => {
       <Routes>
         <Route path='/notes' element={<Notes />} />
         <Route path='/users' element={<Users />} />
-        <Route path='/' element={<Home />} />
+        <Route exact path='/routes-text-01' element={<Home />} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
 export default FormLoginApp;
