@@ -1,0 +1,1 @@
+import{r as s,j as c}from"./index-255eddd5.js";const d=({imageUrl:e,className:o})=>{const[t,r]=s.useState(!1);return s.useEffect(()=>{const a=new Image;a.onload=()=>{r(!0)},a.src=e},[e]),c("div",{className:`transform -scale-x-100 h-screen w-full object bg-cover bg-no-repeat hidden sm:block ${o}`,style:{backgroundImage:t?`url(${e})`:"none"}})};export{d as default};
