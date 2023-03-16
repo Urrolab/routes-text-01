@@ -8,7 +8,7 @@ const Login = () => {
       <Suspense fallback={<div>Cargando...</div>}>
         {window.innerWidth >= 640 && <BackgroundImage imageUrl='https://www.esi-business-school.com/wp-content/uploads/2022/04/AdobeStock_462193658-scaled.jpeg'/>}
       </Suspense>
-      <div className='bg-perso flex flex-col justify-center'>
+      <div className='bg-perso text-white flex flex-col justify-center'>
        <LoginForm/>
       </div>
     </div>

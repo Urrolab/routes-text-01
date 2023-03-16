@@ -8,14 +8,18 @@
     @apply transition duration-500 shadow-2xl shadow-[#000207] hover:shadow-[#9AFE20] ease-in-out hover:ring-[#9afe2081] ring-4 ring-[#9afe2025];
 }
 
-.ring-perso-focus{
-    @apply focus:ring-1
+.input-perso{
+    @apply rounded-lg bg-gray-700 w-full mt-2 p-2 focus:bg-[#011119] ring-1 ring-[#9afe2025] 
 }
 
-.input-perso{
-    @apply transition duration-150 ease-in-out hover:bg-black
+.input-error{
+    @apply rounded-lg bg-[#e9272742] w-full mt-2 p-2 focus:bg-[#77020c6e] ring-1 ring-[#e927277c]
 }
 
 .bg-perso{
     @apply bg-gradient-to-br from-[#031133] via-[#02050e] to-[#031133];
+}
+
+.button-perso{
+    @apply ring-1 ring-[#E3F7DE] transition duration-75 shadow-md hover:ring-[#9AFE20] hover:text-[#9AFE20] ease-in-out active:ring-[#9afe2080] active:text-[#9afe2080] w-full my-5 m-[15px] py-2 bg-[#9AFE20] bg-transparent text-[#EAEBED] text-[150%] font-bold rounded-lg
 }
