@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.ring-perso-hover{
+    @apply transition duration-500 shadow-2xl shadow-[#000207] hover:shadow-[#9AFE20] ease-in-out hover:ring-[#9afe2081] ring-4 ring-[#9afe2025];
+}
+
+.ring-perso-focus{
+    @apply focus:ring-1
+}
+
+.input-perso{
+    @apply transition duration-150 ease-in-out hover:bg-black
+}
+
+.bg-perso{
+    @apply bg-gradient-to-br from-[#031133] via-[#02050e] to-[#031133];
+}
